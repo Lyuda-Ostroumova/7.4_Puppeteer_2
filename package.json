@@ -1,0 +1,19 @@
+{
+  "name": "7.5-puppeteer-2",
+  "version": "1.0.0",
+  "description": "testing tickets booking app with puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "puppeteer"
+  ],
+  "author": "lyudaostroumova",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "jest-puppeteer": "^6.1.0",
+    "puppeteer": "^13.5.2"
+  }
+}

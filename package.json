@@ -4,7 +4,8 @@
   "description": "testing tickets booking app with puppeteer",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "cucumber": "cucumber-js"
   },
   "keywords": [
     "puppeteer"
@@ -15,5 +16,9 @@
     "jest": "^27.5.1",
     "jest-puppeteer": "^6.1.0",
     "puppeteer": "^13.5.2"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "cucumber": "^7.0.0-rc.0"
   }
 }

@@ -23,10 +23,10 @@ describe("Booking a cinema ticket", () => {
         const hallName = await getText(page, hallNameSelector);
         await clickElement(page, timeSelector);
         await clickElement(page, chairSelector);
-        const movieTime= await getText(page, movieTimeSelector);
+        const movieTime = await getText(page, movieTimeSelector);
         const chosenMovie = await getText(page, chosenMovieNameSelector);
         const chosenHall = await getText(page, chosenHallNameSelector);
-        expect(chosenChair).toContain("chair_selected");
+        expect(chosenChairSelector).toContain("chair_selected");
         expect(movieTime).toContain(chosenTime);
         expect(chosenMovie).toEqual(movieName);
         expect(chosenHall).toEqual(hallName);
@@ -39,8 +39,7 @@ describe("Booking a cinema ticket", () => {
         await page.$(bookBtnSelector, {disabled: false});
         await clickElement(page, bookBtnSelector);
         await page.goto("http://qamid.tmweb.ru/client/payment.php");
-        const codeBtn = codeBtnSelector;
-        expect(codeBtn).clickable;
+        expect(codeBtnSelector).clickable;
     });
 
     //sad path

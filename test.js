@@ -24,7 +24,6 @@ describe("Booking a cinema ticket", () => {
         await clickElement(page, timeSelector);
         await clickElement(page, chairSelector);
         const movieTime= await getText(page, movieTimeSelector);
-        const chosenChair = chosenChairSelector;
         const chosenMovie = await getText(page, chosenMovieNameSelector);
         const chosenHall = await getText(page, chosenHallNameSelector);
         expect(chosenChair).toContain("chair_selected");
